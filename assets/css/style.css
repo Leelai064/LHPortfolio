@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    background-color:rgb(201, 200, 200);
+    /* background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0; */
+}
+
+header {
+    padding: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 10px;
+    background-color: rgb(161, 161, 161);
+    color:white;
+}
+
+.L,
+.H{
+color:black;
+}
+
+header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    /* justify-content: space-between; */
+
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    position:relative;
+    display: inline-block;
+    margin-left: 25px;
+
+}
+a{
+    color:black;
+    text-decoration:underline;
+
+}
+p{
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+#content {
+
+}
+
+#about-me img,
+#my-work img,
+#resume img{
+    display: block;
+    margin: 50px auto;
+    max-width: 250px;
+
+}
+
+#my-work {
+
+}
+
+footer{
+    padding: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* Colour scheme:
+-blue 
+-grey  
+-black 
+-aquamarine */
+
