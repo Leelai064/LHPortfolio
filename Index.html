@@ -11,20 +11,22 @@
 <body>
 
     <header>
+        <!-- This allows the L and H to be classified differently in CSS. Gives me an idea for maybe a splash pa -->
         <h1><span class= "L">L</span>eelai <span class=H>H</span>ayslett</h1>
         <nav>
             <ul>
+                <!-- added all of my header links -->
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#my-work">My Work</a>  
+                    <a href="#my-work">Projects.</a>  
                 </li>
                 <li>
-                    <a href="#contact-info">Contact Info</a>
+                    <a href="#contact-info">Contact.</a>
                 </li>
                     <li>
-                    <a href="#resume">Resume</a>
+                    <a href="#resume">Exp.</a>
                 </li>
             </ul>
         </nav>
@@ -35,43 +37,63 @@
     <section id="content">
         
         <section id="about-me" class="about-me">
-        <img src="./assets/profilepic.jpg" class="float-left">
-        <h2>About Me </h2>
-        <p>Hi there!
-            My name is Leelai Hayslett, I currently reside in Hanover, PA. In 2020 I recieved my bachelors degree in mechanical engineering from Florida Institute of Technology.
-        </p>
+        <article>
+            <img src="./assets/profilepic.jpg" class="center">
+            <h2>About Me</h2>
+            <hr>
+            <p>
+                Hi there! Leelai is a 23, recently graduated alumni from Florida Intitute of Technology. Having been exposed to Project Lead the Way (PLTW) in highschool and Anne Arundel Community College (AACC) her career path was heavily influenced towards engineering. With accomplishing a bachelors Mechanical Engineering degree she moved from Florida to Pennsylvania. Still seeking to become more well rounded in her knowledge of tech, she started a web development bootcamp through Penn-State. Aside from engineering she has been studying Japanese since 2012 and hobbies such as anime,video gaming, and book-worming. These hobbies have futher evolved to content creating and twitch streaming. This portfolio will expand as her knowledge grows and this will be the main hub to express those attributes.
+            </p>
+        </article>
         </section>
         <!-- My work  -->
         <section id="my-work" class="my-work"> 
-         <img src="./assets/blankimage.jpg" class="float-left">
-         <h2>My Work</h2>
-         <p>This is where you'll put interactive work in this section and eventually get rid of this paragraph lol</p>
+         <h2>Projects</h2>
+         <hr>
+         <img src="./assets/blankimage.jpg" class="center">
+         <img src="./assets/blankimage.jpg" class="center">
+         <overlay class: overlay></overlay>
+         <!-- I want my projects to display as a gallery much like the homework gif example. Going to do research and place here -->
+        <section class="row"></section>
+
         </section>
          <!-- Contact Info -->
-         <section id="contact-info" class="contact-info"
-        <img src="contact-info" class="contact-info">
-        <h2>Contact Info</h2>
-        <p>This is where you place your email, linkdin, github profile</p>
-        </section>
+         <section id="contact-info" class="contact-info">
+        <h2>Contact.</h2>
+        <hr>
+        <!-- Interactive fields for the client to input their contact information -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="First">
 
-        <section id="resume" class="resume"
-        <img src="resume" class="resume">
-        <h2>Resume</h2>    
-        <p>Place an image of your resume pdf document here</p>
+        <label for="lname">Last Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Last">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="email@gmail.com">
+
+        <label for="comment">Comment</label>
+        <input type="text" id="comment" name="email" placeholder="Feel free to reach out to me! Write any comments, questions, or conerns here...">
+
+      <button>Submit</button>
+
+        </section>
+        <!-- added an image of my resume. Tried adding a pdf viewer and it worked but got rid of my footer so I scrubbed it for now. -->
+        <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <hr>
+        <img src="./assets/resume.png" class="center">
+         <p>
+             <a href="https://www.linkedin.com/in/leelai-hayslett/">
+             <img src="./assets/linkedin-logo.png"height="50">
+            </a>
+        </p>
+
         </section>
     </section>
 </main>
 
 <footer>
-    <h2>♥Leelai Hayslett ♥</h2>
+    <h2>♥LH Inc. 2016 ♥</h2>
 </footer>
-</body>
-
-
-
-
-
-
-
-
+</body> 
 </html>

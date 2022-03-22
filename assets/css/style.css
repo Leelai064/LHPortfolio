@@ -5,72 +5,148 @@
 }
 
 body {
-    background-color:rgb(201, 200, 200);
-    /* background-size: cover;
-    height: 100vh;
-    padding:0;
-    margin:0; */
+    background-color:rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 header {
     padding: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Quattrocento Sans', sans-serif;
     font-size: 20px;
     font-weight: 10px;
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(201, 200, 200);
     color:white;
 }
-
-.L,
-.H{
-color:black;
+header h1{
+    display: inline-block;
+    font-size: 35px;
+}
+/* makes the LH for header one black instead of white*/
+header h1 .L,
+header h1 .H{
+color:rgb(0, 0, 0);
 }
 
 header nav{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
+    font-size: 15px;
+    font-family:'Quattrocento Sans', sans-serif ;
     /* justify-content: space-between; */
-
 }
+
 header nav ul{
     list-style-type: none;
-}
+} 
+
 header nav ul li{
-    position:relative;
+    /* position:relative; */
     display: inline-block;
     margin-left: 25px;
 
 }
+
+h2{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+hr{
+    display: block;
+    margin-top: 0;
+    margin: auto;
+    color: rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.float-left{
+    float:left;
+    margin-right: 15px;
+
+}
+
 a{
     color:black;
     text-decoration:underline;
 
 }
+
 p{
     font-size: 20px;
     overflow-wrap: break-word;
+    text-align: none;
+    padding: 20px;
 }
+
 #content {
-
+    width: 50%;
+    display: inline-block;
+    border-spacing: 5px;
 }
 
-#about-me img,
-#my-work img,
-#resume img{
-    display: block;
-    margin: 50px auto;
-    max-width: 250px;
+#about-me img{
+    display:block;
+    margin-left: auto;
+    height: 300px;
+    width: 300px;
+    padding: 12px;
+    border: 10px solid rgb(115, 165,168);
+    border-radius: 52%
+}
 
+#my-work img
+{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 12px;
+    border: 2px solid rgb(115, 165,168);
+    border-radius: 6px;
+}
+
+#about-me{
+    margin-top: 20 px;
+    margin-bottom: 200px;
+    padding: 10px;
+    height: 550px;
+    font-family:none;
 }
 
 #my-work {
+    margin-top: 20px;
+    margin: bottom 200px;
+    padding: 15px 20px;
+}
 
+#contact-info {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 400px;
+    font-family:none;
+}
+/* making the interactive contact area more clean looking */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(115, 165, 168);
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 20 px;
 }
 
 footer{
+    display: block;
     padding: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Quattrocento Sans', sans-serif;
     text-align: center;
 }
 
