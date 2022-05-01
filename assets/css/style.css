@@ -5,13 +5,22 @@
 }
 
 body {
-    background-color:rgb(255, 255, 255);
+    background-color: #bed1e6;
+}
+
+.content{
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 15px;
 }
 
 main{
-    display: flex;
-    flex-wrap: wrap;
-
+    /* display: flex;
+    flex-wrap: wrap; */
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
 }
 
 header {
@@ -19,17 +28,17 @@ header {
     font-family:'Quattrocento Sans', sans-serif;
     font-size: 20px;
     font-weight: 10px;
-    background-color: rgb(201, 200, 200);
     color:white;
 }
 header h1{
     display: inline-block;
     font-size: 35px;
+    color: #485785;
 }
 /* makes the LH for header one black instead of white*/
 header h1 .L,
 header h1 .H{
-color:rgb(0, 0, 0);
+color:black;
 }
 
 header nav{
@@ -71,7 +80,7 @@ hr{
 }
 
 a{
-    color:black;
+    color:#485785;
     text-decoration:underline;
 
 }
@@ -81,12 +90,6 @@ p{
     overflow-wrap: break-word;
     text-align: none;
     padding: 20px;
-}
-
-#content {
-    width: 50%;
-    display: inline-block;
-    border-spacing: 5px;
 }
 
 #about-me img{
@@ -106,7 +109,7 @@ p{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    padding: 12px;
+    padding: 10px;
     border: 2px solid rgb(115, 165,168);
     border-radius: 6px;
 }
@@ -123,6 +126,28 @@ p{
     margin-top: 20px;
     margin: bottom 200px;
     padding: 15px 20px;
+}
+.hide{
+    display: none;
+}
+#firstphoto:hover + .hide{
+    display: block;
+    color: red;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: red;
+}
+.project-one{
+    /* Look this up */
+    position: absolute; 
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
 }
 
 #contact-info {
