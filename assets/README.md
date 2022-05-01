@@ -8,14 +8,18 @@ This portfolio showcases all of the applications that Leelai has created through
 ```
 Just so that is stated. No piece purely copied without my own modification but with the aid of W3Schools, a lot of the issues I ran into were fixed. That being said I could not figure out why my one paragraph kept overlapping into my next section section. 
 ```
-## URL of Deployed Application
-```
+## Website
+
 https://leelaihayslettportfolio.netlify.app
-```
-## URL of Github Repository
-```
+
+## Github Link
 
 https://github.com/Leelai064/LHPorfolio
 
-```
 ## Website Visuals
+![Landing Page](./images/websitevisual.png)
+
+## Liscense 
+
+MIT
+Bootstrap

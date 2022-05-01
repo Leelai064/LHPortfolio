@@ -132,13 +132,13 @@ p{
 }
 #firstphoto:hover + .hide{
     display: block;
-    color: red;
+    color: #485785;
 }
 
 .container{
     position: relative;
     text-align: center;
-    color: red;
+    color: #485785;
 }
 .project-one{
     /* Look this up */

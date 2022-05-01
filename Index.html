@@ -2,6 +2,7 @@
 <html lang="en-us">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <link rel = "stylesheet" href="./assets/css/style.css">
     <link rel = "resetstylesheet" href="./assets/css/reset.css">
@@ -50,11 +51,12 @@
         <section id="my-work" class="my-work"> 
          <h2>Projects</h2>
          <hr>
-         <div class="container">
-            <img src="./assets/images/blankimage.jpg" class="center" id="firstphoto">
+         <div class="gallery">
+            <img src="./assets/images/projectone.png" class="img-thumbnail" alt="firstphoto">
             <div class="project-one hide">Project One</div> 
          </div>
-         <img src="./assets/blankimage.jpg" class="center">
+         <div class="gallery"><img src="./assets/images/blankimage.jpg" class="secondproject" height= 100>
+        </div>
          <overlay class: overlay></overlay>
          <!-- I want my projects to display as a gallery much like the homework gif example. Going to do research and place here -->
         <section class="row"></section>
@@ -64,8 +66,9 @@
          <section id="contact-info" class="contact-info">
         <h2>Contact.</h2>
         <hr>
+        <p>Feel free to reach out to me. If you click the Linkedin logo below feel free to reach out to me through DM</p>
         <!-- Interactive fields for the client to input their contact information -->
-        <label for="fname">First Name</label>
+        <!-- <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="First">
 
         <label for="lname">Last Name</label>
@@ -77,8 +80,7 @@
         <label for="comment">Comment</label>
         <input type="text" id="comment" name="email" placeholder="Feel free to reach out to me! Write any comments, questions, or conerns here...">
 
-      <button>Submit</button>
-
+      <button>Submit</button> -->
         </section>
         <!-- added an image of my resume. Tried adding a pdf viewer and it worked but got rid of my footer so I scrubbed it for now. -->
         <section id="resume" class="resume">
@@ -88,6 +90,9 @@
          <p>
              <a href="https://www.linkedin.com/in/leelai-hayslett/">
              <img src="./assets/linkedin-logo.png"height="50">
+            </a>
+            <a href="https://github.com/Leelai064" class="center">
+                <img src="./assets/images/github_icon_official.png" height="50">
             </a>
         </p>
 
