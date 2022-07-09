@@ -1,107 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang= "en-us">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
-    <link rel = "stylesheet" href="./assets/css/style.css">
-    <link rel = "resetstylesheet" href="./assets/css/reset.css">
-    <title>LH Portfolio</title>
+    <link rel = "stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-
     <header>
-        <!-- This allows the L and H to be classified differently in CSS. Gives me an idea for maybe a splash pa -->
-        <h1><span class= "L">L</span>eelai <span class=H>H</span>ayslett</h1>
-        <nav>
-            <ul>
-                <!-- added all of my header links -->
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">Projects.</a>  
-                </li>
-                <li>
-                    <a href="#contact-info">Contact.</a>
-                </li>
-                    <li>
-                    <a href="#resume">Exp.</a>
-                </li>
-            </ul>
-        </nav>
-
+    <!-- <div id="banner">
+        <h3>Hi I am</h3>
+        <h1>Leelai Hayslett</h1>
+      <div id="typedStrings">
+        <h2></h2>
+        <span id="typed"></span>
+      </div>
+    -->
+     <!-- <nav id='navBar'>
+       <ul class='navLinks'>
+         <li><a href="url">Home</a></li>
+         <li><a href="#aboutSection">About</a></li>
+         <li><a href="#Experience">Experience</a></li>
+         <li><a href="#Projects">Skills</a></li>
+         <li><a href="url">Projects</a></li>
+       </ul>
+     </nav> -->
     </header>
-<main>
-    <!-- place your blank stock photos here -->
-    <section id="content">
-        
-        <section id="about-me" class="about-me">
-        <article>
-            <img src="./assets/profilepic.jpg" class="center">
-            <h2>About Me</h2>
-            <hr>
-            <p>
-                Hi there! Leelai is a 23, I'm a recent alumni from Florida Intitute of Technology. Having been exposed to Project Lead the Way (PLTW) in highschool and Anne Arundel Community College (AACC) her career path was heavily influenced towards engineering. With accomplishing a bachelors Mechanical Engineering degree she moved from Florida to Pennsylvania. Still seeking to become more well rounded in her knowledge of tech, she started a web development bootcamp through Penn-State. Aside from engineering she has been studying Japanese since 2012 and hobbies such as anime,video gaming, and book-worming.This portfolio will expand as her knowledge grows and this will be the main hub to express those attributes.
-            </p>
-        </article>
-        </section>
-        <!-- My work  -->
-        <section id="my-work" class="my-work"> 
-         <h2>Projects</h2>
-         <hr>
-         <div class="gallery">
-            <img src="./assets/images/projectone.png" class="img-thumbnail" alt="firstphoto" height= "300px" width="500px">
-            <div class="project-one hide">Project One</div> 
-         </div>
-         <div class="gallery"><img src="./assets/images/passwordgenerator.png" class="secondproject" height= "200px">
+    <section class="hero is-primary is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <!-- <a class="navbar-item">
+                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                </a> -->
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-active">
+                    Home
+                  </a>
+                  <a class="navbar-item"
+                    >
+                  </a>
+                  <a class="navbar-item">
+                    <img src="./assets/images/linkedin.png">
+                  </a>
+                  <a class="navbar-item">
+                    <img src="./assets/images/github_icon.png">
+                  </a>
+                  <span class="navbar-item">
+                    <a class="button is-primary is-inverted">
+                      <span class="icon">
+                        <img src="./assets/images/resume.png">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Resume</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
-         <overlay class: overlay></overlay>
-         <!-- I want my projects to display as a gallery much like the homework gif example. Going to do research and place here -->
-        <section class="row"></section>
+      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+           <h1>Hi I'm</h1>
+            <p class="title">
+              Leelai Hayslett
+            </p>
+            
+            <p class="subtitle">
+                <h2></h2>
+                <span id="typed"></span>
+            </p>
+          </div>
+        </div>
+      
+        <!-- Hero footer: will stick at the bottom -->
+        <div class="hero-foot">
+          <nav class="tabs">
+            <div class="container">
+              <ul>
+                <li class="is-active"><a>Overview</a></li>
+                <li><a>About</a></li>
+                <li><a>Experience</a></li>
+                <li><a>Skills</a></li>
+                <li><a>Projects</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    <main>
 
-        </section>
-         <!-- Contact Info -->
-         <section id="contact-info" class="contact-info">
-        <h2>Contact.</h2>
-        <hr>
-        <p>Feel free to reach out to me. If you click the Linkedin logo below feel free to reach out to me through DM</p>
-        <!-- Interactive fields for the client to input their contact information -->
-        <!-- <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="First">
+        <!-- <section id="contentArea">
+            <section id="aboutSection" class="aboutSection">
+                <article>
+                    <h2>About Me</h2>
+                    <hr>
+                    <p>
+                        Hi there! Leelai is a 23, I'm a recent alumni from Florida Intitute of Technology. Having been exposed to Project Lead the Way (PLTW) in highschool and Anne Arundel Community College (AACC) her career path was heavily influenced towards engineering. With accomplishing a bachelors Mechanical Engineering degree she moved from Florida to Pennsylvania. Still seeking to become more well rounded in her knowledge of tech, she started a web development bootcamp through Penn-State. Aside from engineering she has been studying Japanese since 2012 and hobbies such as anime,video gaming, and book-worming.This portfolio will expand as her knowledge grows and this will be the main hub to express those attributes.
+                    </p>
+                </article>
+                </section>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Last">
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="email@gmail.com">
 
-        <label for="comment">Comment</label>
-        <input type="text" id="comment" name="email" placeholder="Feel free to reach out to me! Write any comments, questions, or conerns here...">
 
-      <button>Submit</button> -->
-        </section>
-        <!-- added an image of my resume. Tried adding a pdf viewer and it worked but got rid of my footer so I scrubbed it for now. -->
-        <section id="resume" class="resume">
-        <h2>Resume</h2>
-        <hr>
-        <img src="./assets/resume.png" class="center">
-         <p>
-             <a href="https://www.linkedin.com/in/leelai-hayslett/">
-             <img src="./assets/linkedin-logo.png"height="50">
-            </a>
-            <a href="https://github.com/Leelai064" class="center">
-                <img src="./assets/images/github_icon_official.png" height="50">
-            </a>
-        </p>
 
-        </section>
-    </section>
-</main>
+        </section> -->
 
-<footer>
-    <h2>♥LH Inc. 2016 ♥</h2>
-</footer>
-</body> 
+    </main>
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="./javascript/script.js"></script>
+</body>
+
 </html>

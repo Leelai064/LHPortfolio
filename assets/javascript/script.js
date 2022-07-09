@@ -1,1 +1,0 @@
-// This section will be for the photo gallery on my website under my work once I've gotten more comfortable with java
