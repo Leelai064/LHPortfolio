@@ -4,13 +4,22 @@ body{
     background-color:#b3cae4;
     background-size:cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
-.hero-head,
-.hero-body{
+.hero-body,
+.hero-head{
     background-color:#567bac;
     /* background-color:#b3cae4; */
 }
+/* .firstContainer{
+height: 200vh;
+} */
+.is-active{
+    color:black;
+}
 .tabs{
-    background-color: #121212;
+    background-color:#121212;
+}
+footer{
+    height: 5vh;
 }
