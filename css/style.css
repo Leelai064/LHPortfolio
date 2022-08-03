@@ -20,6 +20,13 @@ height: 200vh;
 .tabs{
     background-color:#121212;
 }
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+
 footer{
     height: 5vh;
 }

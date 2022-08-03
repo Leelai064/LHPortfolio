@@ -23,3 +23,31 @@ $(document).ready(function(){
         }
     });
 });
+var magicLinks = document.querySelectorAll(".magic a");
+for(var i =0; i < magicLinks.length; i++){
+magicLinks[i].addEventListener('click',(event)=>{
+    event.preventDefault();
+    showAndHideOthers(event.target.getAttribute("href"));
+
+    document.querySelector(".magic .is-active a").parentElement.classList.remove("is-active");
+    event.target.parentElement.classList.add("is-active");
+});
+}
+
+//button variables
+function showAndHideOthers(shownID){
+  var containerArray = ["#Overview","#About","#Experience","#Skills","#Projects"];
+  for (var i = 0; i < containerArray.length; i++){
+//hides everything
+    document.querySelector(containerArray[i]).style.display = "none";
+
+  }
+//shows only one of the containers
+  document.querySelector(shownID).style.display = "block";
+
+}
+
+// showAndHideOthers("#About");
+//hide function that hides all the containers
+
+//
