@@ -11,25 +11,6 @@
 </head>
 
 <body>
-  <header>
-    <!-- <div id="banner">
-        <h3>Hi I am</h3>
-        <h1>Leelai Hayslett</h1>
-      <div id="typedStrings">
-        <h2></h2>
-        <span id="typed"></span>
-      </div>
-    -->
-     <!-- <nav id='navBar'>
-       <ul class='navLinks'>
-         <li><a href="url">Home</a></li>
-         <li><a href="#aboutSection">About</a></li>
-         <li><a href="#Experience">Experience</a></li>
-         <li><a href="#Projects">Skills</a></li>
-         <li><a href="url">Projects</a></li>
-       </ul>
-     </nav> -->
-  </header>
     <section class="hero is-primary is-medium">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
@@ -92,45 +73,105 @@
             <div class="container">
               <ul class="magic">
                 <li class="is-active"><a href="#Overview">Overview</a></li>
-                <li><a href="#About">About</a></li>
                 <li><a href="#Experience">Experience</a></li>
                 <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Projects">Projects</a></li>
+                <li><a href="#About">About</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </section>
 <!-- <main> -->
-  <section class="section is-large show" id="Overview">
+  <section class="section is-large show " id="Overview">
     <h1 class="title">Overview</h1>
     <h2 class="subtitle">
       A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
     </h2>
   </section>
-  <section class="section is-large hide" id="About">
-    <h1 class="title">Turtle</h1>
-    <h2 class="subtitle">
-      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-    </h2>
-  </section>
+
   <section class="section is-large hide" id="Experience">
     <h1 class="title">Adam</h1>
     <h2 class="subtitle">
       A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
     </h2>
   </section>
+
   <section class="section is-large hide" id="Skills">
     <h1 class="title">Large section</h1>
     <h2 class="subtitle">
       A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
     </h2>
   </section>
+
+  <!-- Project section -->
+
   <section class="section is-large hide" id="Projects">
-    <h1 class="title">Large section</h1>
+    <nav class="navbar" id = 'projectsNavbar' role="navigation" aria-label="dropdown navigation">
+      <div class="navbar-item has-dropdown is-hoverable projectmagic" id=" projNavbarHover">
+        <a class="navbar-link">
+          Projects
+        </a>
+        <div class="navbar-dropdown">
+          <a href ="#webDev" class="navbar-item">
+           University of Pennsylvania
+          </a>
+          <hr class="navbar-divider">
+          <a href ="#fitEng"class="navbar-item">
+            FIT Engineering
+          </a>
+          <hr class="navbar-divider">
+          <a href = "#aaccEng"class="navbar-item">
+           AACC Engineering
+          </a>
+          <hr class="navbar-divider">
+          <a href = "#highschoolEng" class="navbar-item">
+            PLTW Engineering
+           </a>
+        </div>
+      </div>
+    </nav>
+ <div id="webDev" class = "show">
+
+    <h1 class="title">one</h1>
     <h2 class="subtitle">
       A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
     </h2>
+  </div>
+
+  <div id ="fitEng" class ="hide">
+
+    <h1 class="title">two</h1>
+    <h2 class="subtitle">
+      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+    </h2>
+  </div>
+
+  <div id="aaccEng" class ="hide">
+
+    <h1 class="title">three</h1>
+    <h2 class="subtitle">
+      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+    </h2>
+  </div>
+
+  <div id ="highschoolEng" class ="hide">
+
+    <h1 class="title">four</h1>
+    <h2 class="subtitle">
+      A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
+    </h2>
+
+  </div>
+
+  </section>
+
+  <section class="section is-large hide" id="About">
+    <h1 class="title">Hi there!</h1>
+    <h2 class="subtitle">
+      My name is <strong>Leelai Hayslett</strong>. I am a recent alumni from <strong>Florida Institue of Technology </strong> with a bachelors degree in Mechanical Engineering. Currently, I am a full-time employee at CCI Systems Inc. as a Design Engineer and expanding my knowledge in Full-Stack Web Development through a UPenn Bootcamp. Feel free to check out the projects I've done both currently in the past. If you are interested in what I do, feel free to connect with me through Linkedin, or check out my Github repository.
+    </h2>
+
   </section>
         <!-- <section id="contentArea">
             <section id="aboutSection" class="aboutSection">
@@ -145,7 +186,7 @@
         </section> -->
 
 <!-- </main> -->
-    <footer class="footer">
+    <footer class="footer" id = 'footer'>
       <div class="content has-text-centered">
         <p>
           <strong>Created</strong> by <a href="https://jgthms.com">Leelai Hayslett ♥</a>. 

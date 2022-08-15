@@ -4,29 +4,53 @@ body{
     background-color:#b3cae4;
     background-size:cover;
     background-position: center;
-    /* height: 100vh; */
+    
 }
+
 .hero-body,
 .hero-head{
     background-color:#567bac;
-    /* background-color:#b3cae4; */
+    height: 150px;
 }
-/* .firstContainer{
-height: 200vh;
-} */
+
 .is-active{
     color:black;
 }
+
 .tabs{
     background-color:#121212;
 }
+
 .hide{
     display:none;
 }
+
 .show{
     display:block;
 }
 
-footer{
-    height: 5vh;
+#projectsNavbar{
+right: 80px;
+bottom: 285px;
+border-radius: 5px;
+position: relative;
+width: 110px;
+}
+#projNavbarHover{
+border-radius: 5px;
+}
+#footer{
+    height: 25px;
+    background-color: #121212;
+}
+
+/* Below are the media queries so that the website is responsive to difference sizes. */
+@media screen and (min-width: 480px){
+    
+}
+@media screen and (min-width: 900px){
+
+}
+@media screen and (min-width: 1200px){
+    
 }

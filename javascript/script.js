@@ -33,6 +33,24 @@ magicLinks[i].addEventListener('click',(event)=>{
     event.target.parentElement.classList.add("is-active");
 });
 }
+var projectMagicLinks = document.querySelectorAll(".projectmagic a");
+for (var i=0; i< projectMagicLinks.length; i++){
+projectMagicLinks[i].addEventListener('click',(event)=>{
+    event.preventDefault();
+    showAndHideProjects(event.target.getAttribute("href"));
+
+    document.querySelector(".projectmagic .is-active a").parentElement.classList.remove("is-active");
+    event.target.parentElement.classList.add("is-active");
+});
+}
+
+function showAndHideProjects(shownID){
+    var containerProjectArray = ['#webDev', '#fitEng','#aaccEng','#highschoolEng'];
+    for (var i = 0; i< containerProjectArray.length; i++){
+        document.querySelector(containerProjectArray[i]).style.display = "none";
+    }
+    document.querySelector(shownID).style.display = "block";
+}
 
 //button variables
 function showAndHideOthers(shownID){
