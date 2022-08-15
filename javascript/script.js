@@ -34,24 +34,6 @@ magicLinks[i].addEventListener('click',(event)=>{
     event.target.parentElement.classList.add("is-active");
 });
 }
-var projectMagicLinks = document.querySelectorAll(".projectmagic a");
-for (var i=0; i< projectMagicLinks.length; i++){
-projectMagicLinks[i].addEventListener('click',(event)=>{
-    event.preventDefault();
-    showAndHideProjects(event.target.getAttribute("href"));
-
-    document.querySelector(".projectmagic .is-active a").parentElement.classList.remove("is-active");
-    event.target.parentElement.classList.add("is-active");
-});
-}
-// Project array variables
-function showAndHideProjects(shownID){
-    var containerProjectArray = ['#webDev', '#fitEng','#aaccEng','#highschoolEng', '#projects'];
-    for (var i = 0; i< containerProjectArray.length; i++){
-        document.querySelector(containerProjectArray[i]).style.display = "none";
-    }
-    document.querySelector(shownID).style.display = "block";
-}
 
 //button variables
 function showAndHideOthers(shownID){
@@ -68,8 +50,26 @@ function showAndHideOthers(shownID){
 
 // project photo gallery for UPENN
 
+var projectMagicLinks = document.querySelectorAll(".projectmagic a");
+for (var i=0; i< projectMagicLinks.length; i++){
+projectMagicLinks[i].addEventListener('click',(event)=>{
+    event.preventDefault();
+    showAndHideProjects(event.target.getAttribute("href"));
 
-// showAndHideOthers("#About");
-//hide function that hides all the containers
+    document.querySelector(".projectmagic .is-active a").parentElement.classList.remove("is-active");
+    event.target.parentElement.classList.add("is-active");
+});
+}
+// Project array variables
+function showAndHideProjects(shownID){
+    var containerProjectArray = ['#webDev', '#fitEng', '#projects'];
+    for (var i = 0; i< containerProjectArray.length; i++){
+        document.querySelector(containerProjectArray[i]).style.display = "none";
+    }
+    document.querySelector(shownID).style.display = "block";
+}
 
-//
+// Project Gallery ends here
+
+//Skills Page starts here
+

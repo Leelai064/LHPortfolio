@@ -40,6 +40,26 @@ width: 110px;
 #projNavbarHover{
 border-radius: 5px;
 }
+/* project navbar css ends */
+
+/* skills pages begins */
+
+
+progress{
+    max-width: 750px;
+}
+
+#skillsContainer
+{
+    position: relative;
+    bottom: 75px;
+}
+#progressHeader{
+    padding: 15px;
+}
+
+/* skills pages ends */
+
 /* UPENN Project gallery begins */
 #myWork {
     top: 250px;
