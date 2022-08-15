@@ -3,7 +3,8 @@ var typed = new Typed("#typed",{
     strings:[
         'Full Stack Developer',
         'Mechanical Engineer',
-        'CAD Designer'
+        'CAD Designer',
+        'Florida Institue of Technology alumni'
     ],
     typeSpeed: 60,
     backSpeed: 60,
@@ -43,9 +44,9 @@ projectMagicLinks[i].addEventListener('click',(event)=>{
     event.target.parentElement.classList.add("is-active");
 });
 }
-
+// Project array variables
 function showAndHideProjects(shownID){
-    var containerProjectArray = ['#webDev', '#fitEng','#aaccEng','#highschoolEng'];
+    var containerProjectArray = ['#webDev', '#fitEng','#aaccEng','#highschoolEng', '#projects'];
     for (var i = 0; i< containerProjectArray.length; i++){
         document.querySelector(containerProjectArray[i]).style.display = "none";
     }
@@ -64,6 +65,9 @@ function showAndHideOthers(shownID){
   document.querySelector(shownID).style.display = "block";
 
 }
+
+// project photo gallery for UPENN
+
 
 // showAndHideOthers("#About");
 //hide function that hides all the containers
