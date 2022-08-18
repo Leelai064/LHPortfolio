@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
+
 body{
     margin: 0;
     padding: 0;
@@ -6,7 +8,9 @@ body{
     background-position: center;
     
 }
-
+span{
+    font-family: "Inconsolata", monospace;
+}
 .hero-body,
 .hero-head{
     background-color:#567bac;
@@ -42,6 +46,14 @@ border-radius: 5px;
 }
 /* project navbar css ends */
 
+/* Overview start */
+
+.overviewContainer{
+    position: relative;
+    bottom: 20px;
+}
+
+/* Overview ends */
 /* skills pages begins */
 
 
@@ -61,33 +73,136 @@ progress{
 /* skills pages ends */
 
 /* UPENN Project gallery begins */
-#myWork {
-    top: 250px;
-    padding: 12px;
-  }
-
-.uPennContainer{
-    bottom: 200px;
-    position: relative;
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 0;
 }
 
-  .section-dark.my-work .work-item {
-    margin-bottom: 1rem;
-    -webkit-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
-    border-radius: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
-  }
+.viewbutton {
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.project {
+  position: relative;
+  background: transparent;
+  overflow: hidden;
+  height: 300px;
   
-   .work-item:hover {
-    -webkit-transform: scale(1.055) translateY(-2px);
-    transform: scale(1.055) translateY(-2px);
-    -webkit-box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
-    box-shadow: 0 2px 25px 0 rgba(30, 30, 30, 0.1);
-  }
-  
+}
+.project img {
+  position: absolute;
+  opacity: 0.9;
+}
+.project p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+.project .grid__title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 0.8em;
+  z-index: 3;
+  text-transform: uppercase;
+  color: #121212;
+  letter-spacing: 2px;
+}
+
+.project:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  background: #567bac;
+  height: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
+}
+.grid__overlay button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #b3cae4;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.grid__overlay button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #d1a39e;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay__inner {
+  background: transparent;
+  width: 700px;
+  padding: 40px;
+  position: relative;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #474545;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.close:hover {
+  color: #d1a39e;
+}
+
+.project__image {
+  margin-left: ;
+}
 /* Footer css begins */
 
 #footer{
