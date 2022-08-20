@@ -8,6 +8,7 @@ body{
     background-position: center;
     
 }
+
 span{
     font-family: "Inconsolata", monospace;
 }
@@ -74,11 +75,6 @@ progress{
 
 /* skills pages ends */
 
-.overviewContainer{
- position: relative;
- bottom: 175px;
-
-}
 /* UPENN Project gallery begins */
 body {
   font-family: "Inconsolata", monospace;
@@ -220,15 +216,28 @@ body {
 }
 
 /* Below are the media queries so that the website is responsive to difference sizes. */
-@media screen and (min-width: 480px){
+/* @media screen and (min-width: 480px){
     
-}
-@media screen and (min-width: 1025px){
+} */
+@media screen and (max-width: 1025px){
 #overviewContainer{
    position: relative;
-    bottom: 150px;
+   top: 10px;
+}
+#skillsContainer{
+    position:relative;
+    top: 10px;
+}
+#projectsNavbar{
+    position:relative;
+    right: 0px;
+    top: 1px;
+}
+#burgerMenu{
+    max-width: 50px;
+    position: left;
 }
 }
-@media screen and (min-width: 1200px){
+/* @media screen and (min-width: 1200px){
     
-}
+} */
