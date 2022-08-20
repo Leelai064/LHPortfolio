@@ -16,7 +16,9 @@ span{
     background-color:#567bac;
     height: 150px;
 }
-
+#typeWriterContainr{
+   position:relative;
+}
 .is-active{
     color:black;
 }
@@ -48,9 +50,9 @@ border-radius: 5px;
 
 /* Overview start */
 
-.overviewContainer{
+#overviewContainer{
     position: relative;
-    bottom: 20px;
+    bottom: 150px;
 }
 
 /* Overview ends */
@@ -72,6 +74,11 @@ progress{
 
 /* skills pages ends */
 
+.overviewContainer{
+ position: relative;
+ bottom: 175px;
+
+}
 /* UPENN Project gallery begins */
 body {
   font-family: "Inconsolata", monospace;
@@ -141,7 +148,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  transform: translateY(101%);
+  transform: translateY(90%);
   transition: all 0.3s ease-in-out;
 }
 .grid__overlay button {
@@ -153,6 +160,7 @@ body {
   color: #b3cae4;
   text-transform: uppercase;
   padding: 10px;
+  margin-bottom: 5px;
 }
 .grid__overlay button:hover {
   transition: all 0.3s ease-in-out;
@@ -169,7 +177,7 @@ body {
   bottom: 0;
   left: 0;
   display: none;
-  z-index: 3;
+  z-index: 2;
 }
 
 .overlay.open {
@@ -180,7 +188,7 @@ body {
 
 .overlay__inner {
   background: transparent;
-  width: 700px;
+  width: 500px;
   /* padding: 40px; */
   position: relative;
   opacity: 1;
@@ -215,8 +223,11 @@ body {
 @media screen and (min-width: 480px){
     
 }
-@media screen and (min-width: 900px){
-
+@media screen and (min-width: 1025px){
+#overviewContainer{
+   position: relative;
+    bottom: 150px;
+}
 }
 @media screen and (min-width: 1200px){
     

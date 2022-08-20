@@ -4,6 +4,7 @@ var typed = new Typed("#typed",{
         'Full Stack Developer',
         'Mechanical Engineer',
         'CAD Designer',
+        'Aspiring UX/UI Developer',
         'Florida Institue of Technology alumni'
     ],
     typeSpeed: 60,
@@ -71,21 +72,29 @@ function showAndHideProjects(shownID){
 
 // Project Gallery ends here
 
+//Burger Menu function
+
+const toggleBurgerMenu = () => {
+    let burgerIcon = document.getElementById('burgerMenu');
+    let dropDownMenu = document.getElementById('navbarMenuHeroA');
+    burgerIcon.classList.toggle('is-active');
+    dropDownMenu.classList.toggle('is-active');
+};
 //Skills Page starts here
 
-const buttons = document.querySelectorAll('.project');
-const overlay = document.querySelector('.overlay');
-const overlayImage = document.querySelector('.overlay__inner img');
+// const buttons = document.querySelectorAll('.project');
+// const overlay = document.querySelector('.overlay');
+// const overlayImage = document.querySelector('.overlay__inner img');
 
-function open(e) {
-  overlay.classList.add('open');
-  const src= e.currentTarget.querySelector('img').src;
-  overlayImage.src = src;
-}
+// function open(e) {
+//   overlay.classList.add('open');
+//   const src= e.currentTarget.querySelector('img').src;
+//   overlayImage.src = src;
+// }
 
-function close() {
-  overlay.classList.remove('open');
-}
+// function close() {
+//   overlay.classList.remove('open');
+// }
 
-buttons.forEach(button => button.addEventListener('click', open));
-overlay.addEventListener('click', close);
+// buttons.forEach(button => button.addEventListener('click', open));
+// overlay.addEventListener('click', close);

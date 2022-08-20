@@ -21,10 +21,10 @@
             <!-- <a class="navbar-item">
                   <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
                 </a> -->
-            <span class="navbar-burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
+            <span class="navbar-burger " id="burgerMenu" onClick="toggleBurgerMenu()" aria-label="menu" aria-expanded="false" data-target="navbarMenuHeroA">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
             </span>
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
@@ -39,7 +39,7 @@
                 <img src="./assets/images/github_icon.png">
               </a>
               <span class="navbar-item">
-                <a  href="https://drive.google.com/file/d/14VZYEj0RIz0ENESsE3OjZ4NbBknb0ZrQ/view?usp=sharing"target="_blank" rel="noopener noreferrer" class="button is-primary is-inverted">
+                <a href="https://drive.google.com/file/d/14VZYEj0RIz0ENESsE3OjZ4NbBknb0ZrQ/view?usp=sharing"target="_blank" rel="noopener noreferrer" class="button is-primary is-inverted">
                   <span class="icon">
                     <img src="./assets/images/resume.png">
                     <i class="fab fa-github"></i>
@@ -55,7 +55,7 @@
 
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
-      <div class="container has-text-centered">
+      <div class="container has-text-centered" id="typeWriterContainer">
         <h1>Hi I'm</h1>
         <p class="title">
           Leelai Hayslett
@@ -108,7 +108,42 @@
     </h3>
     <h3>
       <strong>Graduation Year:</strong> 2020
+    </h3>
+    <h3>
       <strong>Major:</strong> B.S. Mechanical Engineering
+    </h3>
+    <hr>
+    <h2 class="subtitle">
+      University of Oxford
+    </h2>
+    <h3>
+     Oxford, UK
+    </h3>
+    <h3>
+      <strong>Study Abroad Years:</strong> Summer 2017 & Summer 2018
+    </h3>
+    <hr>
+    <h2 class="subtitle">
+      Anne Arundel Community College
+    </h2>
+    <h3>
+      Anne Arundel County, MD
+    </h3>
+    <h3>
+      <strong>Classes taken:</strong> AutoCAD , American Sign Language
+    </h3>
+    <hr>
+    <h2 class="subtitle">
+      Severna Park Highschool
+    </h2>
+    <h3>
+      Severna Park, MD
+    </h3>
+    <h3>
+      <strong>Graduation Year:</strong> 2016
+    </h3>
+    <h3>
+      <strong>Engineering Program:</strong> Project Lead the Way
     </h3>
     </div>
   </section>
@@ -191,7 +226,12 @@
       <p>README Generator</p>
       <h3 class="grid__title"> front-end</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <form action="https://drive.google.com/file/d/1m3efrJPmTyj1w7raCMwYSF1bl2oxlgBi/view?usp=sharing"method="get" target="_blank">
+          <button> Launch Demo!</button>
+          </form>
+          <form action="https://github.com/Leelai064/READMEGenerator"method="get" target="_blank">
+            <button> Github Repo</button>
+            </form>
       </div>
     </div>
     
@@ -200,7 +240,12 @@
       <p>Password Generator</p>
       <h3 class="grid__title"> front-end</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <form action="https://leelai064.github.io/passwordgenerator/"method="get" target="_blank">
+          <button> Launch Website!</button>
+          </form>
+          <form action="https://github.com/Leelai064/passgenerator"method="get" target="_blank">
+            <button> Github Repo</button>
+            </form>
       </div>
     </div>
     
@@ -209,7 +254,12 @@
       <p>Personal Scheduler</p>
       <h3 class="grid__title"> full-stack</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">view more</button>
+        <form action="https://github.com/Leelai064/PersonalScheduler"method="get" target="_blank">
+          <button> Launch Website!</button>
+          </form>
+          <form action="https://github.com/Leelai064/PersonalScheduler"method="get" target="_blank">
+            <button> Github Repo</button>
+            </form>
       </div>
     </div>
     
@@ -218,7 +268,12 @@
       <p>Entertainment Hub</p>
       <h3 class="grid__title"> API Intergration</h3>
       <div class="grid__overlay">
-        <button class="viewbutton">View more</button>
+        <form action="https://hkhalfan1979.github.io/entertainment-hub/"method="get" target="_blank">
+          <button> Launch Website!</button>
+          </form>
+        <form action="https://github.com/hkhalfan1979/entertainment-hub"method="get" target="_blank">
+          <button> Github Repo</button>
+          </form>
       </div>
     </div>
     <!-- <div class="project">
@@ -236,8 +291,12 @@
       <h3 class="grid__title"> Full Stack React App</h3>
       <div class="grid__overlay">
         <!-- <button class="viewbutton">view more</button> -->
+        <form action = "" method = "get" target="_blank">
         <button href=" "class="deployedApp">Launch Website!</button>
-        <button href="https://github.com/stefcarter/resume-final"class="githubRepo">Github Repo</button>
+      </form>
+        <form action="https://github.com/stefcarter/resume-final"method="get" target="_blank">
+        <button> Github Repo</button>
+        </form>
       </div>
     </div>
     
