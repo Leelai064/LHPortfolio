@@ -1,76 +1,73 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color:#b3cae4;
-    background-size:cover;
-    background-position: center;
-    
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b3cae4;
+  background-size: cover;
+  background-position: center;
 }
 
-span{
-    font-family: "Inconsolata", monospace;
+span {
+  font-family: "Inconsolata", monospace;
 }
 .hero-body,
-.hero-head{
-    background-color:#567bac;
-    height: 150px;
+.hero-head {
+  background-color: #567bac;
+  height: 150px;
 }
-#typeWriterContainr{
-   position:relative;
+#typeWriterContainr {
+  position: relative;
 }
-.is-active{
-    color:black;
-}
-
-.tabs{
-    background-color:#121212;
+.is-active {
+  color: black;
 }
 
-.hide{
-    display:none;
+.tabs {
+  background-color: #121212;
 }
 
-.show{
-    display:block;
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 /* project navbar css begins */
-#projectsNavbar{
-right: 80px;
-bottom: 275px;
-border-radius: 5px;
-position: relative;
-width: 110px;
+#projectsNavbar {
+  right: 80px;
+  bottom: 275px;
+  border-radius: 5px;
+  position: relative;
+  width: 110px;
 }
 
-#projNavbarHover{
-border-radius: 5px;
+#projNavbarHover {
+  border-radius: 5px;
 }
 /* project navbar css ends */
 
 /* Overview start */
 
-#overviewContainer{
-    position: relative;
-    bottom: 150px;
+#overviewContainer {
+  position: relative;
+  bottom: 150px;
 }
 
 /* Overview ends */
 /* skills pages begins */
 
-
-progress{
-    max-width: 750px;
+progress {
+  max-width: 750px;
 }
 
-#skillsContainer
-{
-    position: relative;
-    bottom: 75px;
+#skillsContainer {
+  position: relative;
+  bottom: 75px;
 }
-#progressHeader{
-    padding: 15px;
+#progressHeader {
+  padding: 15px;
 }
 
 /* skills pages ends */
@@ -81,9 +78,9 @@ body {
   margin: 0;
 }
 
-.viewbutton, 
+.viewbutton,
 .deployedApp,
-.githubRepo{
+.githubRepo {
   cursor: pointer;
 }
 
@@ -100,13 +97,23 @@ body {
 
 .project {
   position: relative;
-  background: transparent;
+  background: #FFB7C5;
   overflow: hidden;
   height: 200px;
 }
 .project img {
   position: absolute;
   opacity: 0.9;
+}
+.project,
+img,
+#otherImage{
+  height: 250px;
+}
+.project,
+img,
+#firstImage {
+  height: 300px;
 }
 .project p {
   position: absolute;
@@ -205,39 +212,67 @@ body {
   color: #d1a39e;
 }
 
-.project__image {
-  margin-left: ;
+/* About Section Begins */
+#aboutCard{
+  width: 1000px;
+  height: 300px;
+  right: 150px;
+  /* padding-right: 500px; */
 }
+#aboutCard h1{
+  position: relative;
+  text-align: center;
+}
+#aboutContainer{
+ position: relative;
+ left: 400px;
+ bottom: 200px;
+ /* transition-property: sliding-horizontally ; */
+ /* transition: all 1.0s ease-in; */
+}
+
+/* About Section Ends */
+
 /* Footer css begins */
 
-#footer{
-    height: 25px;
-    background-color: #121212;
+#footer {
+  height: 25px;
+  background-color: #121212;
 }
 
 /* Below are the media queries so that the website is responsive to difference sizes. */
 /* @media screen and (min-width: 480px){
     
 } */
-@media screen and (max-width: 1025px){
-#overviewContainer{
-   position: relative;
-   top: 10px;
-}
-#skillsContainer{
-    position:relative;
+@media screen and (max-width: 1025px) {
+  #overviewContainer {
+    position: relative;
     top: 10px;
-}
-#projectsNavbar{
-    position:relative;
+  }
+  #skillsContainer {
+    position: relative;
+    top: 10px;
+  }
+  #projectsNavbar {
+    position: relative;
     right: 0px;
     top: 1px;
-}
-#burgerMenu{
+  }
+  #burgerMenu {
     max-width: 50px;
     position: left;
-}
+  }
 }
 /* @media screen and (min-width: 1200px){
     
 } */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(245, 245, 245, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #43485c;
+}

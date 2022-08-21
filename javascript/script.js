@@ -80,6 +80,8 @@ const toggleBurgerMenu = () => {
     burgerIcon.classList.toggle('is-active');
     dropDownMenu.classList.toggle('is-active');
 };
+
+
 //Skills Page starts here
 
 // const buttons = document.querySelectorAll('.project');
