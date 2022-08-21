@@ -11,7 +11,7 @@ https://leelaihayslettportfolio.netlify.app
 
 ## Github Link
 
-https://github.com/Leelai064/LHPorfolio
+https://github.com/Leelai064/lhportfolio
 
 ## Website Visuals
 ![Landing Page](./assets/images/revampedWebsite.png)
